@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>codessl</title>
+ <link href="http://www.codessl.com/atom.xml" rel="self"/>
+ <link href="http://www.codessl.com/"/>
+ <updated>2016-02-13T15:18:54+08:00</updated>
+ <id>http://www.codessl.com</id>
+ <author>
+   <name>Sheng-Loong Su</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Getting Started with Clojure</title>
+   <link href="http://www.codessl.com/2015/06/22/getting-started-with-clojure/"/>
+   <updated>2015-06-22T00:00:00+08:00</updated>
+   <id>http://www.codessl.com/2015/06/22/getting-started-with-clojure</id>
+   <content type="html">&lt;p&gt;Fellow Rubyists seem excited about learning Clojure.&lt;/p&gt;
+
+&lt;p&gt;If you’re still puzzled by this seemingly hipster language, I recommend you to watch the talk titled “You really should know a little bit of Clojure” below.&lt;/p&gt;
+
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
+&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/c9TSQJPKs6A&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;Ben Orenstein (&lt;a href=&quot;https://twitter.com/r00k&quot;&gt;@r00k&lt;/a&gt;) from &lt;a href=&quot;https://thoughtbot.com/&quot;&gt;ThoughtBot&lt;/a&gt; gave an excellent introduction to Clojure and also showcased some cool features of the language.&lt;/p&gt;
+
+&lt;p&gt;Ben explained how learning a functional programming language like Clojure can help Rubyists write better code.&lt;/p&gt;
+
+&lt;p&gt;Admittedly, I am completely sold.&lt;/p&gt;
+
+&lt;p&gt;One really impressive demo is on the Clojure macro system, which appears to be more superior than Ruby metaprogramming.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;ht&quot; dir=&quot;ltr&quot;&gt;Java Reflection &amp;lt; Ruby Metaprogramming &amp;lt; Clojure Macros&lt;/p&gt;&amp;mdash; Sheng-Loong Su (@code_ssl) &lt;a href=&quot;https://twitter.com/code_ssl/status/601392222823526404&quot;&gt;May 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Enough sales pitch. Let’s get started.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;We can download clojure.zip from the &lt;a href=&quot;http://clojure.org/getting_started&quot;&gt;official Clojure website&lt;/a&gt; and follow the instruction to have the minimal install.&lt;/p&gt;
+
+&lt;p&gt;Instead, I installed Clojure via Leiningen which - as its &lt;a href=&quot;http://leiningen.org/&quot;&gt;homepage&lt;/a&gt; brags about - is “the easiest way to use Clojure”. To be precise, Leiningen is an extensible build tool for Clojure that provides dependency management, REPL support, testing, packaging, deployment, and many other capabilities.&lt;/p&gt;
+
+&lt;p&gt;However, I did not follow their installation instruction as I prefer Homebrew. Below are the steps that I did:-&lt;/p&gt;
+
+&lt;p&gt;Step 0: Install Java JDK version 6 or newer if you haven’t (&lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/index.html&quot;&gt;http://www.oracle.com/technetwork/java/javase/downloads/index.html&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Step 0.5: Install Homebrew if you haven’t (&lt;a href=&quot;http://brew.sh&quot;&gt;http://brew.sh&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Step 0.9: Update Homebrew&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+brew update
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 1: Install Leiningen&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+brew install leiningen
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 2: Fire up REPL to test&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+lein repl
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations, You have got Clojure up and running!&lt;/p&gt;
+
+&lt;h2 id=&quot;useful-links&quot;&gt;Useful Links&lt;/h2&gt;
+
+&lt;p&gt;To learn the basics, work through Try Clojure (&lt;a href=&quot;http://www.tryclj.com&quot;&gt;http://www.tryclj.com&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;After that, work through Brave Clojure (&lt;a href=&quot;http://www.braveclojure.com&quot;&gt;http://www.braveclojure.com&lt;/a&gt;). I can’t recommend it enough.&lt;/p&gt;
+
+&lt;p&gt;Many Clojure experts favor Emacs but I use Vim. Gabe Hollombe (&lt;a href=&quot;https://twitter.com/gabehollombe&quot;&gt;@gabehollombe&lt;/a&gt;) from &lt;a href=&quot;http://www.neo.com&quot;&gt;Neo&lt;/a&gt; wrote an excellent post on how to “Use Clojure in Vim” (&lt;a href=&quot;http://www.neo.com/2014/02/25/getting-started-with-clojure-in-vim&quot;&gt;http://www.neo.com/2014/02/25/getting-started-with-clojure-in-vim&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Have fun learning Clojure &amp;lt;3 &amp;lt;3 &amp;lt;3&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

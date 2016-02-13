@@ -4,13 +4,132 @@
  <title>codessl</title>
  <link href="http://www.codessl.com/atom.xml" rel="self"/>
  <link href="http://www.codessl.com/"/>
- <updated>2016-02-13T22:25:15+08:00</updated>
+ <updated>2016-02-14T01:53:45+08:00</updated>
  <id>http://www.codessl.com</id>
  <author>
    <name>Sheng-Loong Su</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Migrating to Microservices and Cloud Native</title>
+   <link href="http://www.codessl.com/2016/02/14/migrating-to-microservices-and-cloud-native/"/>
+   <updated>2016-02-14T00:00:00+08:00</updated>
+   <id>http://www.codessl.com/2016/02/14/migrating-to-microservices-and-cloud-native</id>
+   <content type="html">&lt;p&gt;“Microservices” is yet another buzzword in the modern application development scene.
+I always heard and read about it but had never actually implemented a non-trivial production system using Microservices architecture.&lt;/p&gt;
+
+&lt;p&gt;Last week, I attended a 2-day workshop titled “Migrating a Monolith Application to Cloud Native” conducted by &lt;a href=&quot;http://pivotal.io&quot;&gt;Pivotal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;migrating-a-monolith-application-to-cloud-native&quot;&gt;Migrating a Monolith Application to Cloud Native&lt;/h2&gt;
+&lt;p&gt;You might have noticed that “Microservices” is never mentioned in the workshop title.
+I believe that is Pivotal’s branding strategy to push for their “Cloud Native” offering - “Spring Boot” + “Cloud Foundry”.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, the cool thing is the materials of the entire workshop can be found on GitHub at the following link.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/S2EDU/MigratingAMonolithApplicationToCloudNative/blob/master/student_guide.adoc&quot;&gt;https://github.com/S2EDU/MigratingAMonolithApplicationToCloudNative/blob/master/student_guide.adoc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This page consists of links to all the slides and hands-on lab exercises.&lt;/p&gt;
+
+&lt;p&gt;The following summarises some of my interesting learning points.&lt;/p&gt;
+
+&lt;h3 id=&quot;spring-boot&quot;&gt;Spring Boot&lt;/h3&gt;
+&lt;p&gt;Spring Boot is Pivotal’s attempt to simplify Java app development by favoring convention over configuration.
+This is achieved mostly by adding a few Maven dependencies and annotating Java classes.
+If I had to develop a Java web app, I would consider Spring Boot.
+However, I still feel more comfortable with Ruby on Rails.&lt;/p&gt;
+
+&lt;h3 id=&quot;cloud-foundry&quot;&gt;Cloud Foundry&lt;/h3&gt;
+&lt;p&gt;Cloud Foundry is Pivotal’s Platform-as-a-Service (PaaS), akin to Heroku, Amazon Elastic Beanstalk and Red Hat Openshift.
+We operate on Cloud Foundry using Pivotal Web Console as well as the command line interface tool.
+In particular, the command line tool makes application deployment as easy as running &lt;code class=&quot;highlighter-rouge&quot;&gt;cf push&lt;/code&gt; from the terminal.
+Furthermore, Cloud Foundry’s Marketplace offers a wide range of services such as MySQL, MongoDB, Memcached, Message Queues, Redis, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;shift-in-paradigm&quot;&gt;Shift in Paradigm&lt;/h3&gt;
+&lt;p&gt;In the past, developers needed to make decision on the underlying hardware, virtualization platform and operating systems.
+Recently, container technology such as Docker has become prevailing but still does not solve the problem of managing large number of containers.
+PaaS addresses this pain point by allowing developers to focus on only Application and Data and forget about the underlying infrastructure.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-microservices&quot;&gt;What is Microservices?&lt;/h3&gt;
+&lt;p&gt;My understanding of microservices is an architectural style where the system is composed of a suite of small independent and autonomous services.&lt;/p&gt;
+
+&lt;h3 id=&quot;microservices-vs-soa&quot;&gt;Microservices vs SOA&lt;/h3&gt;
+&lt;p&gt;Microservices is similar to Service Oriented Architecture (SOA) except that:-&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enterprise Service Bus (ESB) is not used&lt;/li&gt;
+  &lt;li&gt;Communication pipeline is lightweight and dumb, eg. REST and AMQP&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;how-to-split-a-monolith-into-microservices&quot;&gt;How to split a Monolith into Microservices?&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Based on domain classes and data relationship (boundary)&lt;/li&gt;
+  &lt;li&gt;Based on persistence storage (RDBMS vs Graph Database)&lt;/li&gt;
+  &lt;li&gt;Based on business value&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;standalone-server-vs-embedded-server&quot;&gt;Standalone Server vs Embedded Server&lt;/h3&gt;
+&lt;p&gt;In the past, developers tended to deploy multiple application WAR/EAR into a server, eg. Tomcat, WebLogic, WebSphere, JBoss, etc.&lt;/p&gt;
+
+&lt;p&gt;With microservices, it is usually the other way round where each application will launch its own embedded server, eg. Embedded Tomcat, Jetty, etc.
+The benefit is each application server is independent of others.&lt;/p&gt;
+
+&lt;h3 id=&quot;configuration-server&quot;&gt;Configuration Server&lt;/h3&gt;
+&lt;p&gt;Spring Boot allows application configurations:-&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;to be externalised by using &lt;code class=&quot;highlighter-rouge&quot;&gt;application.yml&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;application.properties&lt;/code&gt; and Spring profiles&lt;/li&gt;
+  &lt;li&gt;to be overridden by environment variables if available&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This approach is taken a step further by centralising configuration for all microservices in a single Git repository.&lt;/p&gt;
+
+&lt;p&gt;A Configuration Server is used for:-&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pulling configuration data from the Git repository&lt;/li&gt;
+  &lt;li&gt;serving configuration data to the respective microservices&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;service-registry&quot;&gt;Service Registry&lt;/h3&gt;
+&lt;p&gt;All microservices have to register as “Producer” or “Consumer” with the Service Registry.
+This allows microservices to discover and talk to each other using the service name provided by the Service Registry, instead of hardcoding the microservices URLs.&lt;/p&gt;
+
+&lt;p&gt;Pivotal recommends building service registry with Netflix’s open source “Eureka”.
+Pivotal also recommends building consumer with Netflix’s open source “Feign”.&lt;/p&gt;
+
+&lt;h3 id=&quot;client-side-load-balancing&quot;&gt;Client-side Load Balancing&lt;/h3&gt;
+&lt;p&gt;I have to admit that this is a very new concept for me.
+Traditionally, load balancing is done in the server-side.
+Instead, microservices use client-side load balancing to decide which particular producer service to call.
+This allows consumers to intelligently select the best producer based on certain metrics such as network latency.
+The tradeoff is we cannot ensure that the service call load is evenly distributed among the producer microservices.&lt;/p&gt;
+
+&lt;p&gt;Pivotal recommends implementing client-side load balancing with Netflix’s open source “Ribbon”.&lt;/p&gt;
+
+&lt;h3 id=&quot;circuit-breaker&quot;&gt;Circuit Breaker&lt;/h3&gt;
+&lt;p&gt;The idea is a consumer calls a circuit breaker which checks the endpoint and responds to the consumer with whether the service call can be made successfully.
+If the service call fails for some reasons, the consumer simply proceeds with the error handling instead of calling the endpoint again and again subsequently.&lt;/p&gt;
+
+&lt;p&gt;Pivotal recommends implementing circuit breaker with Netflix’s open source “Hystrix”, which also comes with a nifty monitoring dashboard module.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-be-continued&quot;&gt;To be Continued&lt;/h3&gt;
+&lt;p&gt;Microservices is undoubtedly the trend for scalable architecture.&lt;/p&gt;
+
+&lt;p&gt;There are still a few questions unanswered:-&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;When is microservices not recommended?&lt;/li&gt;
+  &lt;li&gt;How to effectively split the development team and system into microservices?&lt;/li&gt;
+  &lt;li&gt;How to secure microservices?&lt;/li&gt;
+  &lt;li&gt;How to automate integration testing for microservices?&lt;/li&gt;
+  &lt;li&gt;How to set up monitoring and alerts for microservices?&lt;/li&gt;
+  &lt;li&gt;How to implement microservices and cloud native on premise in a secure and restrictive environment?&lt;/li&gt;
+  &lt;li&gt;… etc.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Getting Started with Clojure</title>

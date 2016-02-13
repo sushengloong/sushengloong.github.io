@@ -10,7 +10,7 @@
 
   <title>
     
-      Home &middot; codessl
+      Migrating to Microservices and Cloud Native &middot; codessl
     
   </title>
 
@@ -43,7 +43,7 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li class="sidebar-nav-item active">
+      <li class="sidebar-nav-item">
         <a href="/">Home</a>
       </li>
 
@@ -85,18 +85,10 @@
 
 
     <div class="content container">
-      <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2016/02/14/migrating-to-microservices-and-cloud-native/">
-        Migrating to Microservices and Cloud Native
-      </a>
-    </h1>
-
-    <span class="post-date">14 Feb 2016</span>
-
-    <p>“Microservices” is yet another buzzword in the modern application development scene.
+      <div class="post">
+  <h1 class="post-title">Migrating to Microservices and Cloud Native</h1>
+  <span class="post-date">14 Feb 2016</span>
+  <p>“Microservices” is yet another buzzword in the modern application development scene.
 I always heard and read about it but had never actually implemented a non-trivial production system using Microservices architecture.</p>
 
 <p>Last week, I attended a 2-day workshop titled “Migrating a Monolith Application to Cloud Native” conducted by <a href="http://pivotal.io">Pivotal</a>.</p>
@@ -208,91 +200,24 @@ If the service call fails for some reasons, the consumer simply proceeds with th
   <li>… etc.</li>
 </ol>
 
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/22/getting-started-with-clojure/">
-        Getting Started with Clojure
-      </a>
-    </h1>
-
-    <span class="post-date">22 Jun 2015</span>
-
-    <p>Fellow Rubyists seem excited about learning Clojure.</p>
-
-<p>If you’re still puzzled by this seemingly hipster language, I recommend you to watch the talk titled “You really should know a little bit of Clojure” below.</p>
-
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class="embed-container">    <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/c9TSQJPKs6A" frameborder="0" allowfullscreen=""></iframe></div>
-
-<p>Ben Orenstein (<a href="https://twitter.com/r00k">@r00k</a>) from <a href="https://thoughtbot.com/">ThoughtBot</a> gave an excellent introduction to Clojure and also showcased some cool features of the language.</p>
-
-<p>Ben explained how learning a functional programming language like Clojure can help Rubyists write better code.</p>
-
-<p>Admittedly, I am completely sold.</p>
-
-<p>One really impressive demo is on the Clojure macro system, which appears to be more superior than Ruby metaprogramming.</p>
-
-<blockquote class="twitter-tweet" lang="en"><p lang="ht" dir="ltr">Java Reflection &lt; Ruby Metaprogramming &lt; Clojure Macros</p>&mdash; Sheng-Loong Su (@code_ssl) <a href="https://twitter.com/code_ssl/status/601392222823526404">May 21, 2015</a></blockquote>
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>Enough sales pitch. Let’s get started.</p>
-
-<h2 id="installation">Installation</h2>
-
-<p>We can download clojure.zip from the <a href="http://clojure.org/getting_started">official Clojure website</a> and follow the instruction to have the minimal install.</p>
-
-<p>Instead, I installed Clojure via Leiningen which - as its <a href="http://leiningen.org/">homepage</a> brags about - is “the easiest way to use Clojure”. To be precise, Leiningen is an extensible build tool for Clojure that provides dependency management, REPL support, testing, packaging, deployment, and many other capabilities.</p>
-
-<p>However, I did not follow their installation instruction as I prefer Homebrew. Below are the steps that I did:-</p>
-
-<p>Step 0: Install Java JDK version 6 or newer if you haven’t (<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>)</p>
-
-<p>Step 0.5: Install Homebrew if you haven’t (<a href="http://brew.sh">http://brew.sh</a>)</p>
-
-<p>Step 0.9: Update Homebrew</p>
-
-<p><code class="highlighter-rouge">
-brew update
-</code></p>
-
-<p>Step 1: Install Leiningen</p>
-
-<p><code class="highlighter-rouge">
-brew install leiningen
-</code></p>
-
-<p>Step 2: Fire up REPL to test</p>
-
-<p><code class="highlighter-rouge">
-lein repl
-</code></p>
-
-<p>Congratulations, You have got Clojure up and running!</p>
-
-<h2 id="useful-links">Useful Links</h2>
-
-<p>To learn the basics, work through Try Clojure (<a href="http://www.tryclj.com">http://www.tryclj.com</a>)</p>
-
-<p>After that, work through Brave Clojure (<a href="http://www.braveclojure.com">http://www.braveclojure.com</a>). I can’t recommend it enough.</p>
-
-<p>Many Clojure experts favor Emacs but I use Vim. Gabe Hollombe (<a href="https://twitter.com/gabehollombe">@gabehollombe</a>) from <a href="http://www.neo.com">Neo</a> wrote an excellent post on how to “Use Clojure in Vim” (<a href="http://www.neo.com/2014/02/25/getting-started-with-clojure-in-vim">http://www.neo.com/2014/02/25/getting-started-with-clojure-in-vim</a>)</p>
-
-<p>Have fun learning Clojure &lt;3 &lt;3 &lt;3</p>
-
-  </div>
-  
 </div>
 
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/06/22/getting-started-with-clojure/">
+            Getting Started with Clojure
+            <small>22 Jun 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
 </div>
+
     </div>
 
     <script>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Blog &middot; codessl
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="/public/css/codessl.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-icon-144x144.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="/">
+        <img class="sidebar-image" src="/public/images/codessl.jpeg"/>
+        <h1>codessl</h1>
+      </a>
+      <p class="lead">keep calm and code more awesome</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+        <a href="/">Home</a>
+      </li>
+      <li class="sidebar-nav-item active">
+        <a href="/blog/">Blog</a>
+      </li>
+
+      
+
+      
+        <li class="sidebar-nav-item"><a href="https://github.com/sushengloong" target="_blank">GitHub</a></li>
+      
+        <li class="sidebar-nav-item"><a href="https://twitter.com/code_ssl" target="_blank">Twitter</a></li>
+      
+        <li class="sidebar-nav-item"><a href="https://www.linkedin.com/in/sushengloong" target="_blank">LinkedIn</a></li>
+      
+    </ul>
+
+    <p>&copy; 2015-2016</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/blog/2016/02/14/migrating-to-microservices-and-cloud-native/">
+        Migrating to Microservices and Cloud Native
+      </a>
+    </h1>
+
+    <span class="post-date">14 Feb 2016</span>
+
+    <p>“Microservices” is yet another buzzword in the modern application development scene.
+I always heard and read about it but had never actually implemented a non-trivial production system using Microservices architecture.</p>
+
+<p>Last week, I attended a 2-day workshop titled “Migrating a Monolith Application to Cloud Native” conducted by <a href="http://pivotal.io">Pivotal</a>.</p>
+
+<h2 id="migrating-a-monolith-application-to-cloud-native">Migrating a Monolith Application to Cloud Native</h2>
+<p>You might have noticed that “Microservices” is never mentioned in the workshop title.
+I believe that is Pivotal’s branding strategy to push for their “Cloud Native” offering - “Spring Boot” + “Cloud Foundry”.</p>
+
+<p>Nevertheless, the cool thing is the materials of the entire workshop can be found on GitHub at the following link.</p>
+
+<p><a href="https://github.com/S2EDU/MigratingAMonolithApplicationToCloudNative/blob/master/student_guide.adoc">https://github.com/S2EDU/MigratingAMonolithApplicationToCloudNative/blob/master/student_guide.adoc</a></p>
+
+<p>This page consists of links to all the slides and hands-on lab exercises.</p>
+
+<p>The following summarises some of my interesting learning points.</p>
+
+<h3 id="spring-boot">Spring Boot</h3>
+<p>Spring Boot is Pivotal’s attempt to simplify Java app development by favoring convention over configuration.
+This is achieved mostly by adding a few Maven dependencies and annotating Java classes.
+If I had to develop a Java web app, I would consider Spring Boot.
+However, I still feel more comfortable with Ruby on Rails.</p>
+
+<h3 id="cloud-foundry">Cloud Foundry</h3>
+<p>Cloud Foundry is Pivotal’s Platform-as-a-Service (PaaS), akin to Heroku, Amazon Elastic Beanstalk and Red Hat Openshift.
+We operate on Cloud Foundry using Pivotal Web Console as well as the command line interface tool.
+In particular, the command line tool makes application deployment as easy as running <code class="highlighter-rouge">cf push</code> from the terminal.
+Furthermore, Cloud Foundry’s Marketplace offers a wide range of services such as MySQL, MongoDB, Memcached, Message Queues, Redis, etc.</p>
+
+<h3 id="shift-in-paradigm">Shift in Paradigm</h3>
+<p>In the past, developers needed to make decision on the underlying hardware, virtualization platform and operating systems.
+Recently, container technology such as Docker has become prevailing but still does not solve the problem of managing large number of containers.
+PaaS addresses this pain point by allowing developers to focus on only Application and Data and forget about the underlying infrastructure.</p>
+
+<h3 id="what-is-microservices">What is Microservices?</h3>
+<p>My understanding of microservices is an architectural style where the system is composed of a suite of small independent and autonomous services.</p>
+
+<h3 id="microservices-vs-soa">Microservices vs SOA</h3>
+<p>Microservices is similar to Service Oriented Architecture (SOA) except that:-</p>
+
+<ol>
+  <li>Enterprise Service Bus (ESB) is not used</li>
+  <li>Communication pipeline is lightweight and dumb, eg. REST and AMQP</li>
+</ol>
+
+<h3 id="how-to-split-a-monolith-into-microservices">How to split a Monolith into Microservices?</h3>
+<ol>
+  <li>Based on domain classes and data relationship (boundary)</li>
+  <li>Based on persistence storage (RDBMS vs Graph Database)</li>
+  <li>Based on business value</li>
+</ol>
+
+<h3 id="standalone-server-vs-embedded-server">Standalone Server vs Embedded Server</h3>
+<p>In the past, developers tended to deploy multiple application WAR/EAR into a server, eg. Tomcat, WebLogic, WebSphere, JBoss, etc.</p>
+
+<p>With microservices, it is usually the other way round where each application will launch its own embedded server, eg. Embedded Tomcat, Jetty, etc.
+The benefit is each application server is independent of others.</p>
+
+<h3 id="configuration-server">Configuration Server</h3>
+<p>Spring Boot allows application configurations:-</p>
+
+<ol>
+  <li>to be externalised by using <code class="highlighter-rouge">application.yml</code> or <code class="highlighter-rouge">application.properties</code> and Spring profiles</li>
+  <li>to be overridden by environment variables if available</li>
+</ol>
+
+<p>This approach is taken a step further by centralising configuration for all microservices in a single Git repository.</p>
+
+<p>A Configuration Server is used for:-</p>
+
+<ol>
+  <li>pulling configuration data from the Git repository</li>
+  <li>serving configuration data to the respective microservices</li>
+</ol>
+
+<h3 id="service-registry">Service Registry</h3>
+<p>All microservices have to register as “Producer” or “Consumer” with the Service Registry.
+This allows microservices to discover and talk to each other using the service name provided by the Service Registry, instead of hardcoding the microservices URLs.</p>
+
+<p>Pivotal recommends building service registry with Netflix’s open source “Eureka”.
+Pivotal also recommends building consumer with Netflix’s open source “Feign”.</p>
+
+<h3 id="client-side-load-balancing">Client-side Load Balancing</h3>
+<p>I have to admit that this is a very new concept for me.
+Traditionally, load balancing is done in the server-side.
+Instead, microservices use client-side load balancing to decide which particular producer service to call.
+This allows consumers to intelligently select the best producer based on certain metrics such as network latency.
+The tradeoff is we cannot ensure that the service call load is evenly distributed among the producer microservices.</p>
+
+<p>Pivotal recommends implementing client-side load balancing with Netflix’s open source “Ribbon”.</p>
+
+<h3 id="circuit-breaker">Circuit Breaker</h3>
+<p>The idea is a consumer calls a circuit breaker which checks the endpoint and responds to the consumer with whether the service call can be made successfully.
+If the service call fails for some reasons, the consumer simply proceeds with the error handling instead of calling the endpoint again and again subsequently.</p>
+
+<p>Pivotal recommends implementing circuit breaker with Netflix’s open source “Hystrix”, which also comes with a nifty monitoring dashboard module.</p>
+
+<h3 id="to-be-continued">To be Continued</h3>
+<p>Microservices is undoubtedly the trend for scalable architecture.</p>
+
+<p>There are still a few questions unanswered:-</p>
+
+<ol>
+  <li>When is microservices not recommended?</li>
+  <li>How to effectively split the development team and system into microservices?</li>
+  <li>How to secure microservices?</li>
+  <li>How to automate integration testing for microservices?</li>
+  <li>How to set up monitoring and alerts for microservices?</li>
+  <li>How to implement microservices and cloud native on premise in a secure and restrictive environment?</li>
+  <li>… etc.</li>
+</ol>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/blog/pages/2">Older</a>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+    </div>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64375011-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

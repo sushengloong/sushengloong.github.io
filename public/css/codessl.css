@@ -7,3 +7,8 @@
 .post a {
   word-wrap: break-word;
 }
+
+.post-image-caption {
+  font-style: italic;
+  font-size: medium;
+}

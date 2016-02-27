@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>codessl</title>
- <link href="http://www.codessl.com/atom.xml" rel="self"/>
- <link href="http://www.codessl.com/"/>
- <updated>2016-02-14T22:40:03+08:00</updated>
- <id>http://www.codessl.com</id>
+ <link href="https://www.codessl.com/atom.xml" rel="self"/>
+ <link href="https://www.codessl.com/"/>
+ <updated>2016-02-27T09:29:31+08:00</updated>
+ <id>https://www.codessl.com</id>
  <author>
    <name>Sheng-Loong Su</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Migrating to Microservices and Cloud Native</title>
-   <link href="http://www.codessl.com/blog/2016/02/14/migrating-to-microservices-and-cloud-native/"/>
+   <link href="https://www.codessl.com/blog/2016/02/14/migrating-to-microservices-and-cloud-native/"/>
    <updated>2016-02-14T00:00:00+08:00</updated>
-   <id>http://www.codessl.com/blog/2016/02/14/migrating-to-microservices-and-cloud-native</id>
+   <id>https://www.codessl.com/blog/2016/02/14/migrating-to-microservices-and-cloud-native</id>
    <content type="html">&lt;p&gt;“Microservices” is yet another buzzword in the modern application development scene.
 I always heard and read about it but had never actually implemented a non-trivial production system using Microservices architecture.&lt;/p&gt;
 
@@ -133,9 +133,9 @@ If the service call fails for some reasons, the consumer simply proceeds with th
  
  <entry>
    <title>Getting Started with Clojure</title>
-   <link href="http://www.codessl.com/blog/2015/06/22/getting-started-with-clojure/"/>
+   <link href="https://www.codessl.com/blog/2015/06/22/getting-started-with-clojure/"/>
    <updated>2015-06-22T00:00:00+08:00</updated>
-   <id>http://www.codessl.com/blog/2015/06/22/getting-started-with-clojure</id>
+   <id>https://www.codessl.com/blog/2015/06/22/getting-started-with-clojure</id>
    <content type="html">&lt;p&gt;Fellow Rubyists seem excited about learning Clojure.&lt;/p&gt;
 
 &lt;p&gt;If you’re still puzzled by this seemingly hipster language, I recommend you to watch the talk titled “You really should know a little bit of Clojure” below.&lt;/p&gt;

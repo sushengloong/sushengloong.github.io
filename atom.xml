@@ -4,13 +4,38 @@
  <title>codessl</title>
  <link href="https://www.codessl.com/atom.xml" rel="self"/>
  <link href="https://www.codessl.com/"/>
- <updated>2016-03-06T21:34:09+08:00</updated>
+ <updated>2016-04-03T07:51:33+08:00</updated>
  <id>https://www.codessl.com</id>
  <author>
    <name>Sheng-Loong Su</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Enterprise Integration with Ruby</title>
+   <link href="https://www.codessl.com/blog/2016/04/03/enterprise-integration-with-ruby/"/>
+   <updated>2016-04-03T00:00:00+08:00</updated>
+   <id>https://www.codessl.com/blog/2016/04/03/enterprise-integration-with-ruby</id>
+   <content type="html">&lt;p&gt;I gave a talk on “Enterprise Integration with Ruby” at the &lt;a href=&quot;http://www.meetup.com/Singapore-Ruby-Group/events/229502298/&quot;&gt;March meetup&lt;/a&gt; of Singapore Ruby Group.&lt;/p&gt;
+
+&lt;p&gt;The motivation of this talk is to give a high-level walkthrough on my experiences and strategies for integrating Ruby apps with some classic Enterprise systems or services, which may be uncommon in the startup and open source world.&lt;/p&gt;
+
+&lt;p&gt;In case you missed my talk, below is the video recorded by the awesome &lt;a href=&quot;https://engineers.sg/video/enterprise-integration-with-ruby-singapore-ruby-group--606&quot;&gt;Engineers.SG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
+&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/j9f9lWvv3Uc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Below are my slides.&lt;/p&gt;
+
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;728f7bf827fa44f78d774ce46bb7efd5&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;
+It was a great turnout and I thank everyone for listening to my talk.
+I would also like to thank the meetup organisers and sponsors.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Migrating to Microservices and Cloud Native</title>

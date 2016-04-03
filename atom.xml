@@ -4,7 +4,7 @@
  <title>codessl</title>
  <link href="https://www.codessl.com/atom.xml" rel="self"/>
  <link href="https://www.codessl.com/"/>
- <updated>2016-04-03T07:53:57+08:00</updated>
+ <updated>2016-04-03T08:06:58+08:00</updated>
  <id>https://www.codessl.com</id>
  <author>
    <name>Sheng-Loong Su</name>
@@ -24,7 +24,7 @@
 &lt;p&gt;In case you missed my talk, below is the video recorded by the awesome &lt;a href=&quot;https://engineers.sg/video/enterprise-integration-with-ruby-singapore-ruby-group--606&quot;&gt;Engineers.SG&lt;/a&gt;.&lt;/p&gt;
 
 &lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
-&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/j9f9lWvv3Uc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;//www.youtube.com/embed/j9f9lWvv3Uc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Below are my slides.&lt;/p&gt;
@@ -166,7 +166,7 @@ If the service call fails for some reasons, the consumer simply proceeds with th
 &lt;p&gt;If you’re still puzzled by this seemingly hipster language, I recommend you to watch the talk titled “You really should know a little bit of Clojure” below.&lt;/p&gt;
 
 &lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
-&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/c9TSQJPKs6A&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;//www.youtube.com/embed/c9TSQJPKs6A&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;Ben Orenstein (&lt;a href=&quot;https://twitter.com/r00k&quot;&gt;@r00k&lt;/a&gt;) from &lt;a href=&quot;https://thoughtbot.com/&quot;&gt;ThoughtBot&lt;/a&gt; gave an excellent introduction to Clojure and also showcased some cool features of the language.&lt;/p&gt;
 

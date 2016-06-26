@@ -4,13 +4,48 @@
  <title>codessl</title>
  <link href="https://www.codessl.com/atom.xml" rel="self"/>
  <link href="https://www.codessl.com/"/>
- <updated>2016-04-13T21:20:39+08:00</updated>
+ <updated>2016-06-26T21:02:59+08:00</updated>
  <id>https://www.codessl.com</id>
  <author>
    <name>Sheng-Loong Su</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Red Dot Ruby Conf 2016</title>
+   <link href="https://www.codessl.com/blog/2016/06/26/reddotrubyconf-2016/"/>
+   <updated>2016-06-26T00:00:00+08:00</updated>
+   <id>https://www.codessl.com/blog/2016/06/26/reddotrubyconf-2016</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.reddotrubyconf.com/&quot;&gt;Red Dot Ruby Conf (RDRC)&lt;/a&gt; is the annual Ruby conference in Singapore. This year, the conference was held on 23 and 24 June 2016 at Matrix (Biopolis).&lt;/p&gt;
+
+&lt;p&gt;First and foremost, I would like to give a big shout-out to my project department (MOM WINS PO) for sponsoring me and a few other colleagues to the conference this year.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+  &lt;img src=&quot;/public/images/rdrc_matz.png&quot; alt=&quot;I am a Matz (creator of Ruby)&#39;s fanboy!&quot; style=&quot;width: 400px;&quot; /&gt;
+  &lt;span class=&quot;post-image-caption&quot;&gt;I am a Matz (creator of Ruby)&#39;s fanboy!&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As usual, the speaker lineup was awesome. Apart from the 5 renowned keynote speakers, there were 11 other speakers and 9 lightning-talk speakers, from all over the world. I was very excited about meeting Matz and Aaron Patterson again.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+  &lt;img src=&quot;/public/images/rdrc_speaker_lineup.png&quot; alt=&quot;RDRC 2016 Keynote Speakers&quot; style=&quot;width: 540px;&quot; /&gt;
+  &lt;span class=&quot;post-image-caption&quot;&gt;RDRC 2016 Keynote Speakers&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In case you miss it, you may watch all the talks on &lt;a href=&quot;https://engineers.sg/conference/reddotrubyconf2016&quot;&gt;Engineers.sg&lt;/a&gt;. Kudos to Michael Cheng for recording and publishing the talks online. Also thanks Chee Aun for collating the slides links on his GitHub &lt;a href=&quot;https://gist.github.com/cheeaun/43843c8b1c764825b9f3d63ed8f5bd78&quot;&gt;Gist&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have learned many things from the speakers, albeit there were also a lot of things that I could not fully grasp. Furthermore, I also got to mingle with some ex-colleagues and Rubyists working in other government agencies and private companies. This is a small industry and I reckon that it is good to know what and how other Rubyists are doing.&lt;/p&gt;
+
+&lt;p&gt;This is actually my fourth time attending RDRC. In 2014 particularly, I gave a lightning talk titled &lt;a href=&quot;https://www.youtube.com/watch?v=_NrPT8IS5Ag&quot;&gt;“Algorithmic Trading for Fun and Profit”&lt;/a&gt;. This year, I did not give any talk but I did help out the organiser, Winston with rating the Call-for-Proposal (CFP) submissions. Admittedly I did not manage to contribute as much as I would like to. So I was quite surprised when I saw my name in Winston’s appreciation list during the closing address. Hopefully I will still be able to attend the conference next time.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+  &lt;img src=&quot;/public/images/rdrc_winston_appreciation.png&quot; alt=&quot;My name in Winston&#39;s slides&quot; style=&quot;width: 400px;&quot; /&gt;
+  &lt;span class=&quot;post-image-caption&quot;&gt;My name in Winston&#39;s slides&lt;/span&gt;
+&lt;/div&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Enterprise Integration with Ruby</title>

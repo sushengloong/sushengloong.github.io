@@ -4,7 +4,7 @@
  <title>codessl</title>
  <link href="https://www.codessl.com/atom.xml" rel="self"/>
  <link href="https://www.codessl.com/"/>
- <updated>2016-10-09T17:01:34+08:00</updated>
+ <updated>2019-01-21T23:37:45-08:00</updated>
  <id>https://www.codessl.com</id>
  <author>
    <name>Sheng-Loong Su</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Red Dot Ruby Conf 2016</title>
    <link href="https://www.codessl.com/blog/2016/06/26/reddotrubyconf-2016/"/>
-   <updated>2016-06-26T00:00:00+08:00</updated>
+   <updated>2016-06-26T00:00:00-07:00</updated>
    <id>https://www.codessl.com/blog/2016/06/26/reddotrubyconf-2016</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.reddotrubyconf.com/&quot;&gt;Red Dot Ruby Conf (RDRC)&lt;/a&gt; is the annual Ruby conference in Singapore. This year, the conference was held on 23 and 24 June 2016 at Matrix (Biopolis).&lt;/p&gt;
 
@@ -50,7 +50,7 @@
  <entry>
    <title>Enterprise Integration with Ruby</title>
    <link href="https://www.codessl.com/blog/2016/04/03/enterprise-integration-with-ruby/"/>
-   <updated>2016-04-03T00:00:00+08:00</updated>
+   <updated>2016-04-03T00:00:00-07:00</updated>
    <id>https://www.codessl.com/blog/2016/04/03/enterprise-integration-with-ruby</id>
    <content type="html">&lt;p&gt;I gave a talk on “Enterprise Integration with Ruby” at the &lt;a href=&quot;http://www.meetup.com/Singapore-Ruby-Group/events/229502298/&quot;&gt;March meetup&lt;/a&gt; of Singapore Ruby Group.&lt;/p&gt;
 
@@ -75,7 +75,7 @@ I would also like to thank the meetup organisers and sponsors.&lt;/p&gt;
  <entry>
    <title>Migrating to Microservices and Cloud Native</title>
    <link href="https://www.codessl.com/blog/2016/02/14/migrating-to-microservices-and-cloud-native/"/>
-   <updated>2016-02-14T00:00:00+08:00</updated>
+   <updated>2016-02-14T00:00:00-08:00</updated>
    <id>https://www.codessl.com/blog/2016/02/14/migrating-to-microservices-and-cloud-native</id>
    <content type="html">&lt;p&gt;“Microservices” is yet another buzzword in the modern application development scene.
 I always heard and read about it but had never actually implemented a non-trivial production system using Microservices architecture.&lt;/p&gt;
@@ -194,7 +194,7 @@ If the service call fails for some reasons, the consumer simply proceeds with th
  <entry>
    <title>Getting Started with Clojure</title>
    <link href="https://www.codessl.com/blog/2015/06/22/getting-started-with-clojure/"/>
-   <updated>2015-06-22T00:00:00+08:00</updated>
+   <updated>2015-06-22T00:00:00-07:00</updated>
    <id>https://www.codessl.com/blog/2015/06/22/getting-started-with-clojure</id>
    <content type="html">&lt;p&gt;Fellow Rubyists seem excited about learning Clojure.&lt;/p&gt;
 

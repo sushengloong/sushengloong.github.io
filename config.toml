@@ -45,19 +45,24 @@ disqusShortname = "_changeme_"
   series = "series"
 
 [[params.social]]
+    name = "Blog"
+    icon = "fab fa-blogger"
+    weight = 1
+    url = "/posts/"
+[[params.social]]
     name = "Github"
     icon = "fab fa-github"
-    weight = 1
+    weight = 2
     url = "https://github.com/sushengloong/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
-    weight = 2
+    weight = 3
     url = "https://twitter.com/code_ssl/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
-    weight = 3
+    weight = 4
     url = "https://www.linkedin.com/in/sushengloong/"
 
 

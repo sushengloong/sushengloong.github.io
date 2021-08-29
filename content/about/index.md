@@ -5,14 +5,15 @@ date: 2019-03-17T21:49:35-07:00
 
 ## About codessl.com
 
-This is my personal website and blog where I write about software development and machine learning.
+I blog about software development, functional programming and machine learning.
 
-The reason why I picked `codessl.com` as the domain name is because `ssl` is my initial -- `Su Sheng Loong` is the full name I normally use in Singapore.
+If it is not obvious already, `ssl` is my initial and is neither Secure Socket Layer nor Self-Supervised Learning.
 
 ## About Sheng-Loong Su
 
-By day, I am a Senior Software Engineer at Salesforce where I do full-stack, backend and data engineering in mostly Scala.
+I am currently working as a Senior Software Engineer at a very early stage stealth fintech startup.
+As part of the founding team, I enjoy building products and services using pure functional programming with Scala and the Typelevel stack (Cats, Cats Effect, fs2, http4s, etc.)
 
-By night, I study and practise machine learning. I am particularly interested in deep learning.
+Prior to joining the startup, I worked at [Stripe](https://stripe.com), [Salesforce](https://salesforce.com) and [GovTech Singapore](https://tech.gov.sg) where I did full stack development and data engineering with machine learning.
 
-Currently I live in San Francisco, California, United States of America.
+I lived and worked in San Francisco for a while. I moved back to Singapore in early 2020 (almost before COVID outbreak in Singapore and USA).

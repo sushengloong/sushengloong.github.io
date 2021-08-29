@@ -17,8 +17,8 @@ disqusShortname = "_changeme_"
 [params]
     author = "Sheng-Loong Su"
     description = "Sheng-Loong Su's personal website"
-    keywords = "blog,developer,full stack development,machine learning,deep learning,data science,big data"
-    info = "Full Stack Developer and Machine Learning Practitioner"
+    keywords = "blog,developer,functional programming,full stack development,machine learning,deep learning,data science,big data"
+    info = "FP Pragmatist | ML Practitioner"
     avatarurl = "images/avatar.jpg"
     # footercontent = "Enter a text here."
 

@@ -1,5 +1,4 @@
 +++
-draft = true
 date = 2021-12-26T16:15:00+08:00
 title = "A quick introduction to functional effects in Scala"
 +++

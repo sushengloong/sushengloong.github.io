@@ -21,6 +21,7 @@ disqusShortname = "codessl"
     info = "FP Pragmatist | ML Practitioner"
     avatarurl = "images/avatar.jpg"
     # footercontent = "Enter a text here."
+    since = 2015
 
     dateformat = "January 2, 2006"
 
@@ -31,6 +32,8 @@ disqusShortname = "codessl"
     # commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
     rtl = false
+
+    colorScheme = "auto"
 
     # Use inverted colors
     inverted = false

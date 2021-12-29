@@ -5,15 +5,23 @@ date: 2019-03-17T21:49:35-07:00
 
 ## About codessl.com
 
-I blog about software development, functional programming and machine learning.
+I blog about software engineering and functional programming.
 
-If it is not obvious already, `ssl` is my initial.
+If it was not obvious already, `ssl` is my initial.
 
 ## About Sheng-Loong Su
 
-I am currently working as a Senior Software Engineer at a startup, [Smartpay](https://smartpay.co).
-As part of the founding team, I enjoy building products and services using pure functional programming with Scala and the Typelevel stack (Cats, Cats Effect, fs2, http4s, etc.)
+I am currently doing software engineering at a fintech startup, [Smartpay](https://smartpay.co).
+As part of the founding team, I enjoy building products and services using
+pure functional programming with Scala and
+the Typelevel stack (cats, cats effect, fs2, http4s, monocle, skunk, etc.)
 
-Prior to joining the startup, I worked at [Stripe](https://stripe.com), [Salesforce](https://salesforce.com) and [GovTech Singapore](https://tech.gov.sg) where I did full stack development and AI/data science engineering.
+Prior to joining the startup,
+I was fortunate enough to work at
+[Stripe](https://stripe.com),
+[Salesforce](https://salesforce.com) and
+[GovTech Singapore](https://tech.gov.sg)
+where I did full stack, AI and data science engineering.
 
-I lived and worked in San Francisco for a while. I am currently back in Singapore.
+When I started this blog, I was living and working in San Francisco.
+Currently, I am back in Singapore enjoying my favorite local food.

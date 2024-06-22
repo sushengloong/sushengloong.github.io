@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'codessl.com',
   tagline: 'sharing is caring',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-32x32.png',
 
   // Set the production url of your site here
   url: 'https://www.codessl.com',
@@ -60,8 +60,8 @@ const config: Config = {
     navbar: {
       title: 'codessl.com',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'codessl.com logo',
+        src: 'img/dragon.webp',
       },
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},

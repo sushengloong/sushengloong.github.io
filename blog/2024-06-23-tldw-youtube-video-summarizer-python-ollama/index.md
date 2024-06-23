@@ -5,8 +5,6 @@ authors: [ssl]
 tags: [genai, llm, ollama, whisper]
 ---
 
-Estimated read time: 5 minutes
-
 ## Problem
 
 I personally subscribe to many educational channels on YouTube and every day there are so many new videos to watch.

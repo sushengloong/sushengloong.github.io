@@ -1,3 +1,11 @@
+genai:
+
+llm:
+
+ollama:
+
+whisper:
+
 others:
   label: Others
   permalink: /others

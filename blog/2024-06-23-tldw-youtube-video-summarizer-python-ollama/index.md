@@ -1,6 +1,6 @@
 ---
-slug: tldw-youtube-video-summarizer-local-models
-title: "TL;DW YouTube video summarizer using local models"
+slug: tldw-youtube-video-summarizer-python-ollama
+title: "TL;DW YouTube video summarizer with Python and Ollama"
 authors: [ssl]
 tags: [genai, llm, ollama, whisper]
 ---

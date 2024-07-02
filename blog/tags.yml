@@ -1,9 +1,8 @@
+agentic_workflow:
+ai_agent:
 genai:
-
 llm:
-
 ollama:
-
 whisper:
 
 others:

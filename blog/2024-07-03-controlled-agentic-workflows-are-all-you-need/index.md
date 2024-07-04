@@ -11,7 +11,7 @@ My introduction to the concept of "AI agents" began with Reinforcement Learning 
 
 Despite the success of these applications, developing a reward function that effectively guides RL agents towards their objectives is a significant challenge. Recent advancements in Large Language Models (LLM) and Large Multi-modal Models (LMM) have shifted the focus towards LLM/LMM-powered agents. Lilian Weng from OpenAI provides an excellent overview of LLM-powered agents in her [blog post](https://lilianweng.github.io/posts/2023-06-23-agent/). For further motivation, Andrej Karpathy explained why you should work on AI agents in his [talk](https://www.youtube.com/watch?v=fqVLjtvWgq8).
 
-Andrew Ng offers a compelling analogy for understanding LLMs: generating the next token is like writing an essay in one pass, whereas AI agents iteratively refine the output, similar to multiple drafts of an essay. He elaborates on this in his [talk](https://www.youtube.com/watch?v=sal78ACtGTc). Ng is optimistic about AI agents, as highlighted in his recent [LinkedIn post](https://www.linkedin.com/posts/andrewyng_apples-gen-ai-strategy-stabilitys-copyright-clear-activity-7207059565136236544-9vDg), where he notes a preference for discussing agentic workflows over AI agents due to the reduced likelihood of marketing jargon.
+Andrew Ng offers a compelling analogy for understanding LLMs: generating the next token is like writing an essay in one pass, whereas AI agents iteratively refine the output in a loop. He elaborates on this in his [talk](https://www.youtube.com/watch?v=sal78ACtGTc). Ng is optimistic about AI agents, as highlighted in his recent [LinkedIn post](https://www.linkedin.com/posts/andrewyng_apples-gen-ai-strategy-stabilitys-copyright-clear-activity-7207059565136236544-9vDg), where he notes a preference for discussing agentic workflows over AI agents due to the reduced likelihood of marketing jargon.
 
 ## From Unbounded AI Agents to Bounded Agentic Workflows
 
@@ -37,8 +37,9 @@ A common trend I've noticed is the modeling of AI agents as Finite State Machine
 Here are a few notable examples:
 
 - AlphaCodium's [From Prompt Engineering to Flow Engineering](https://www.codium.ai/blog/alphacodium-state-of-the-art-code-generation-for-code-contests/)
-- Parcha's [Agents aren't all you need](https://www.parcha.com/blog/agents-arent-all-you-need)
 - Gradient Labs's [Building agentic workflows](https://blog.gradient-labs.ai/p/building-agentic-workflows)
+- Parcha's [Agents aren't all you need](https://www.parcha.com/blog/agents-arent-all-you-need)
+- Peter Richens (Cleric)'s ["How to Evaluate Your AI Agent"](https://pub.towardsai.net/how-to-evaluate-your-ai-agent-e3ffed6e8756)
 
 Langchain is also heading in this direction, with the launch of [LangGraph Cloud](https://blog.langchain.dev/langgraph-cloud/).
 They are actively educating the industry on creating reliable agents.

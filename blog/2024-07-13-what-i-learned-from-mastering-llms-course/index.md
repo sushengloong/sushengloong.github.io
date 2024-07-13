@@ -1,6 +1,6 @@
 ---
 slug: what-i-learned-from-mastering-llms-course
-title: "What I learned from Mastering LLMs course"
+title: "What I learned from the Mastering LLMs course"
 authors: [ssl]
 tags: [genai, llm, ai_agent, agentic_workflow]
 ---

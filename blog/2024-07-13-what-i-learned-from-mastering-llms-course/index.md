@@ -54,7 +54,7 @@ but here they recommend running such tests in production to act as guardrails.
 There were also insights on using LLMs for evaluations, showcasing different perspectives on best practices.
 
 A great insight I learned from one of the instructors is always try to turn what you're trying to evaluate into a binary classification.
-This makes it a lot easier to implement, reason aboout and evaluate in isolation.
+This makes it a lot easier to implement, reason about and evaluate in isolation.
 
 ## Just use APIs (or No GPU before PMF)
 

@@ -5,7 +5,7 @@ authors: [ssl]
 tags: [genai, llm, ai_agent, agentic_workflow]
 ---
 
-I recently signed up and completed the Mastering LLMs course and this post is to share what I learned from the course.
+I recently signed up and completed the Mastering LLMs course on Maven and this post is to share what I learned from the course.
 
 [mastering-llms-certificate.jpg]
 (My certificate can be viewed online at https://maven.com/certificate/BBBPHevx)

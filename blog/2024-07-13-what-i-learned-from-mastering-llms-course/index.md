@@ -7,8 +7,8 @@ tags: [genai, llm, ai_agent, agentic_workflow]
 
 I recently signed up and completed the Mastering LLMs course on Maven and this post is to share what I learned from the course.
 
-[mastering-llms-certificate.jpg]
-(My certificate can be viewed online at https://maven.com/certificate/BBBPHevx)
+[![Mastering LLMs course certificate](./mastering-llms-certificate.jpg)](https://maven.com/certificate/BBBPHevx)
+_(My certificate can be viewed online at https://maven.com/certificate/BBBPHevx)_
 
 This course was initially focused on LLM fine-tuning, but as more instructors joined, it somehow evolved into an LLM conference.
 Being based in Singapore, I usually could only watch the recordings later as the live sessions were often at inconvenient hours.
